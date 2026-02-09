@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamified Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gamified Application</h1>
+
+    <div id="xpCounter">XP: 0</div>
+
+    <div class="stepper">
+      <div class="step" id="step1">
+        <div class="circle">1</div>
+        <small>Profile</small>
+      </div>
+      <div class="step" id="step2">
+        <div class="circle">2</div>
+        <small>Tasks</small>
+      </div>
+      <div class="step" id="step3">
+        <div class="circle">3</div>
+        <small>Submission</small>
+      </div>
+      <div class="step" id="step4">
+        <div class="circle">4</div>
+        <small>Status</small>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="completeStep(1)">Complete Profile (+20 XP)</button>
+      <button onclick="completeStep(2)">Complete Task (+10 XP)</button>
+      <button onclick="completeStep(3)">Submit (+30 XP)</button>
+      <button onclick="completeStep(4)">Check Status</button>
+    </div>
+
+    <h3>Badges</h3>
+    <div id="badges">
+      <div class="badge" id="badge50">50 XP</div>
+      <div class="badge" id="badge100">100 XP</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
